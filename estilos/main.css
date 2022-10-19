@@ -8,6 +8,121 @@ body {
   background-color: #1f1f1f;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E07805;
+  height: 65px;
+}
+.header__h {
+  display: flex;
+  background-color: #1f1f1f;
+  width: 65px;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid #ADA598;
+}
+.header__h img {
+  height: 70%;
+}
+.header__menu {
+  display: flex;
+  width: 180px;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu i {
+  color: #FFFFFF;
+  font-size: 32px;
+}
+.header__menu #arrow {
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+}
+.header__menu p {
+  margin-left: 2px;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+}
+
+.sectionCuerpoInicio {
+  display: flex;
+  background-color: #1f1f1f;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 45px;
+}
+.sectionCuerpoInicio h1 {
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 26px;
+}
+.sectionCuerpoInicio__busqueda {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.sectionCuerpoInicio__busqueda button {
+  width: 250px;
+  height: 36px;
+  border-radius: 13px;
+  margin: 10px 6px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.sectionCuerpoInicio__tabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  width: 800px;
+}
+.sectionCuerpoInicio__tabla__fila1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #1f1f1f;
+  width: 800px;
+  height: 40px;
+}
+.sectionCuerpoInicio__tabla__fila1__columna {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  width: 160px;
+}
+.sectionCuerpoInicio__tabla__fila1__columna p {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+.sectionCuerpoInicio__tabla__fila1 #left {
+  border-left: 1px solid #1f1f1f;
+}
+.sectionCuerpoInicio__tabla__titulos {
+  background-color: #1f1f1f;
+  color: #FFFFFF;
+  font-size: 17px;
+  padding: 3px 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+.sectionCuerpoInicio__tabla__filas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 800px;
+  height: 40px;
+}
+
 .headerLogin {
   display: flex;
   height: 80px;
@@ -100,7 +215,10 @@ body {
   align-items: center;
   height: 100px;
 }
-.sectionLogin__fondo__btn p {
+.sectionLogin__fondo__btn a {
+  text-decoration: none;
+}
+.sectionLogin__fondo__btn a p {
   font-size: 18px;
   color: #FFFFFF;
   font-weight: 500;

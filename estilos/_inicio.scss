@@ -1,0 +1,123 @@
+.header{
+    display: flex;
+        justify-content: space-between;
+        background-color: $naranja;
+        height: 65px;
+    &__h{
+        display: flex;
+        background-color: $grisOscuro;
+        width: 65px;
+        justify-content: center;
+        align-items: center;
+        border-left: 5px solid $grisClaro;
+        img{
+            height: 70%;
+        }
+    }   
+
+    &__menu{
+        display: flex;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            color: $blanco;
+            font-size: 32px;
+        }
+
+        #arrow{
+            margin-left: 20px;
+            color: $blanco;
+            font-size: 15px; 
+            font-weight: bold;
+        }
+
+        p{
+            margin-left: 2px;
+            color: $blanco;
+            font-weight: bold;
+            font-size: 20px; 
+            padding:0;
+        }
+    }
+}
+
+.sectionCuerpoInicio{
+    display: flex;
+    background-color: $grisOscuro;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+    h1{
+        color:white;
+        text-transform: uppercase;
+        font-style: italic;
+        font-size: 26px;
+    }
+
+    &__busqueda{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        button{
+            width: 250px;
+            height:36px;
+            border-radius: 13px;
+            margin:10px 6px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &__tabla{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: $blanco;
+        border-radius: 20px;
+        width: 800px;
+        &__fila1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border-bottom: 1px solid $grisOscuro;
+            width: 800px;
+            height: 40px;
+
+            &__columna{
+                display: flex;
+                justify-content: space-around;
+                height: 40px;
+                width: 160px;
+                p{
+                    align-self: center;
+                    padding: 0;
+                    margin:0;
+                }
+            }
+            #left{
+               border-left: 1px solid $grisOscuro;
+            }
+        }
+
+        &__titulos{
+            background-color: $grisOscuro;
+            color: $blanco;
+            font-size: 17px;
+            padding: 3px 20px;
+            font-weight: 600;
+            font-style: italic;
+        }
+        &__filas{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            width: 800px;
+            height: 40px;
+        }
+    }
+}
