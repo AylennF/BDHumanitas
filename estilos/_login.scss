@@ -1,0 +1,122 @@
+.headerLogin{
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    align-items: flex-end;
+    margin:10px 60px;
+    img{
+        height: 60px;
+    }
+
+    h1{
+        padding: 0 0 0 2px;
+        margin:0;
+        text-transform:uppercase;
+        color:$grisClaro;
+        font-weight: 800;
+        font-size: 37px;
+
+        span{
+            color:$naranja;
+        }
+    }
+
+    h2{
+        color:$blanco;
+        font-weight: 500;
+        font-size: 32px;
+        span{
+            font-size: 37px;
+            font-weight: 700;
+            padding: 0 0 0 5px;
+        }
+    }
+}
+
+.sectionLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 83vh;
+    
+    &__fondo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: center;
+        height: 400px;
+        width: 450px;
+        border-radius: 30px;
+        background-color: $naranja;
+        box-shadow: 0px 3px 7px #000000ad;
+        padding: 10px 0;
+
+        &__campos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 200px;
+
+            &__campo{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 55%;
+                input{
+                    width: 90%;
+                    height: 35px;
+                    border-radius: 15px;
+                    border-style: none;
+                    padding:4px;
+                    box-shadow: 0px 3px 7px $grisClaro inset;            
+                }
+            }
+
+            &__texto{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                label{
+                    font-size: 20px;
+                    color: $blanco;
+                    font-weight: 700;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    
+                }
+            }
+        }
+
+        &__btn{
+            display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center; 
+                height: 100px;
+
+                p{
+                    font-size: 18px;
+                    color: $blanco;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+
+                input{
+                    width: 80%;
+                    height: 35px;
+                    border-radius: 15px;
+                    border-style: none;
+                    padding:4px;
+                    background-color: $grisOscuro;
+                    color: $blanco;
+                    font-style: italic;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+        }
+    }   
+}

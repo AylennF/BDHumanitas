@@ -1,0 +1,18 @@
+// FUENTES
+$fuenteHumanitas: 'Raleway', sans-serif;
+
+// COLORES
+$blanco: #FFFFFF;
+$grisClaro: #ADA598;
+$grisOscuro: #1f1f1f;
+$naranja: #E07805;
+
+*{
+    margin:0;
+    padding:0;
+    font-family: $fuenteHumanitas;
+}
+
+body{
+    background-color: $grisOscuro;
+}
