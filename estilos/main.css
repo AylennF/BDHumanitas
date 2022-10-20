@@ -51,10 +51,10 @@ body {
 
 .sectionCuerpoInicio {
   display: flex;
-  background-color: #1f1f1f;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  background-color: #1f1f1f;
   margin-top: 45px;
 }
 .sectionCuerpoInicio h1 {
@@ -63,48 +63,14 @@ body {
   font-style: italic;
   font-size: 26px;
 }
-.sectionCuerpoInicio__busqueda {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.sectionCuerpoInicio__busqueda button {
-  width: 250px;
-  height: 36px;
-  border-radius: 13px;
-  margin: 10px 6px;
-  font-size: 16px;
-  font-weight: 600;
-}
 .sectionCuerpoInicio__tabla {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   background-color: #FFFFFF;
   border-radius: 20px;
   width: 800px;
-}
-.sectionCuerpoInicio__tabla__fila1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-bottom: 1px solid #1f1f1f;
-  width: 800px;
-  height: 40px;
-}
-.sectionCuerpoInicio__tabla__fila1__columna {
-  display: flex;
-  justify-content: space-around;
-  height: 40px;
-  width: 160px;
-}
-.sectionCuerpoInicio__tabla__fila1__columna p {
-  align-self: center;
-  padding: 0;
-  margin: 0;
-}
-.sectionCuerpoInicio__tabla__fila1 #left {
-  border-left: 1px solid #1f1f1f;
+  height: auto;
+  margin-top: 30px;
 }
 .sectionCuerpoInicio__tabla__titulos {
   background-color: #1f1f1f;
@@ -114,13 +80,51 @@ body {
   font-weight: 600;
   font-style: italic;
 }
-.sectionCuerpoInicio__tabla__filas {
+.sectionCuerpoInicio__tabla__filas__destacados {
+  background-color: #ADA598;
+}
+.sectionCuerpoInicio__botones #buscar {
+  background-color: #E07805;
+  color: #FFFFFF;
+}
+
+.claseFlex, .claseBotones, .sectionCuerpoInicio__busqueda, .sectionCuerpoInicio__botones, .claseFilas, .sectionCuerpoInicio__tabla__fila1, .sectionCuerpoInicio__tabla__filas, .claseColumnas, .sectionCuerpoInicio__tabla__fila1__columna, .sectionCuerpoInicio__tabla__filas__destacados, .sectionCuerpoInicio__tabla__filas__otros {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.claseColumnas, .sectionCuerpoInicio__tabla__fila1__columna, .sectionCuerpoInicio__tabla__filas__destacados, .sectionCuerpoInicio__tabla__filas__otros {
+  height: 40px;
+  width: 160px;
+}
+.claseColumnas p, .sectionCuerpoInicio__tabla__fila1__columna p, .sectionCuerpoInicio__tabla__filas__destacados p, .sectionCuerpoInicio__tabla__filas__otros p {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.claseFilas, .sectionCuerpoInicio__tabla__fila1, .sectionCuerpoInicio__tabla__filas {
   flex-direction: row;
   width: 800px;
   height: 40px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+#left {
+  border-left: 1px solid #1f1f1f;
+}
+
+.claseBotones, .sectionCuerpoInicio__busqueda, .sectionCuerpoInicio__botones {
+  margin-top: 30px;
+}
+.claseBotones button, .sectionCuerpoInicio__busqueda button, .sectionCuerpoInicio__botones button {
+  width: 250px;
+  height: 36px;
+  border-radius: 13px;
+  margin: 10px 6px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .headerLogin {

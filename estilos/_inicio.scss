@@ -1,8 +1,8 @@
 .header{
     display: flex;
-        justify-content: space-between;
-        background-color: $naranja;
-        height: 65px;
+    justify-content: space-between;
+    background-color: $naranja;
+    height: 65px;
     &__h{
         display: flex;
         background-color: $grisOscuro;
@@ -45,10 +45,10 @@
 
 .sectionCuerpoInicio{
     display: flex;
-    background-color: $grisOscuro;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    background-color: $grisOscuro;
     margin-top: 45px;
     h1{
         color:white;
@@ -58,48 +58,22 @@
     }
 
     &__busqueda{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        button{
-            width: 250px;
-            height:36px;
-            border-radius: 13px;
-            margin:10px 6px;
-            font-size: 16px;
-            font-weight: 600;
-        }
+        @extend .claseBotones;
     }
 
     &__tabla{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         background-color: $blanco;
         border-radius: 20px;
         width: 800px;
+        height: auto;
+        margin-top: 30px;
         &__fila1{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            border-bottom: 1px solid $grisOscuro;
-            width: 800px;
-            height: 40px;
+            @extend .claseFilas;
 
             &__columna{
-                display: flex;
-                justify-content: space-around;
-                height: 40px;
-                width: 160px;
-                p{
-                    align-self: center;
-                    padding: 0;
-                    margin:0;
-                }
-            }
-            #left{
-               border-left: 1px solid $grisOscuro;
+                @extend .claseColumnas;
             }
         }
 
@@ -112,12 +86,68 @@
             font-style: italic;
         }
         &__filas{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: row;
-            width: 800px;
-            height: 40px;
+            @extend .claseFilas;
+
+            &__destacados{
+                @extend .claseColumnas;
+                background-color: $grisClaro;
+            }
+            &__otros{
+                @extend .claseColumnas;
+            }
+           
+        }
+    }
+
+    &__botones{
+        @extend .claseBotones;
+        #buscar{
+            background-color: $naranja;
+            color: $blanco;
         }
     }
 }
+
+.claseFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.claseColumnas{
+    @extend .claseFlex;
+    height: 40px;
+    width: 160px;
+    p{
+        align-self: center;
+        padding: 0;
+        margin:0;
+    }
+}
+
+.claseFilas{
+    @extend .claseFlex;
+    flex-direction: row;
+    width: 800px;
+    height: 40px;
+    border-bottom: 1px solid $grisOscuro;
+}
+
+#left{
+    border-left: 1px solid $grisOscuro;
+ }
+
+ .claseBotones{
+    @extend .claseFlex;
+    margin-top: 30px;
+
+        button{
+            width: 250px;
+            height:36px;
+            border-radius: 13px;
+            margin:10px 6px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+ }
+ 
