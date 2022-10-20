@@ -1,60 +1,14 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: $naranja;
-    height: 65px;
-    &__h{
-        display: flex;
-        background-color: $grisOscuro;
-        width: 65px;
-        justify-content: center;
-        align-items: center;
-        border-left: 5px solid $grisClaro;
-        img{
-            height: 70%;
-        }
-    }   
-
-    &__menu{
-        display: flex;
-        width: 180px;
-        align-items: center;
-        justify-content: center;
-
-        i{
-            color: $blanco;
-            font-size: 32px;
-        }
-
-        #arrow{
-            margin-left: 20px;
-            color: $blanco;
-            font-size: 15px; 
-            font-weight: bold;
-        }
-
-        p{
-            margin-left: 2px;
-            color: $blanco;
-            font-weight: bold;
-            font-size: 20px; 
-            padding:0;
-        }
-    }
-}
-
 .sectionCuerpoInicio{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $grisOscuro;
-    margin-top: 45px;
+    margin-top: 2.2vw;
     h1{
         color:white;
         text-transform: uppercase;
         font-style: italic;
-        font-size: 26px;
     }
 
     &__busqueda{
@@ -66,9 +20,9 @@
         flex-direction: column;
         background-color: $blanco;
         border-radius: 20px;
-        width: 800px;
+        width: 70vw;
         height: auto;
-        margin-top: 30px;
+        margin-top: 2.2vw;
         &__fila1{
             @extend .claseFilas;
 
@@ -80,8 +34,8 @@
         &__titulos{
             background-color: $grisOscuro;
             color: $blanco;
-            font-size: 17px;
-            padding: 3px 20px;
+            font-size: 1.05rem;
+            padding: 0.2vw 0.7vw;
             font-weight: 600;
             font-style: italic;
         }
@@ -116,10 +70,11 @@
 
 .claseColumnas{
     @extend .claseFlex;
-    height: 40px;
-    width: 160px;
+    width: 14vw;
+    height: 7vh;
     p{
         align-self: center;
+        font-size: 1vw;
         padding: 0;
         margin:0;
     }
@@ -128,8 +83,8 @@
 .claseFilas{
     @extend .claseFlex;
     flex-direction: row;
-    width: 800px;
-    height: 40px;
+    width: 70vw;
+    height: 7vh;
     border-bottom: 1px solid $grisOscuro;
 }
 
@@ -142,11 +97,11 @@
     margin-top: 30px;
 
         button{
-            width: 250px;
-            height:36px;
-            border-radius: 13px;
-            margin:10px 6px;
-            font-size: 16px;
+            width: 17vw;
+            height:5vh;
+            border-radius: 1vw;
+            margin:0 6px;
+            font-size: 1.1rem;
             font-weight: 600;
         }
  }

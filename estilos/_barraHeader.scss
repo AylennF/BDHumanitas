@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $naranja;
+    height: 65px;
+    &__h{
+        display: flex;
+        background-color: $grisOscuro;
+        width: 65px;
+        justify-content: center;
+        align-items: center;
+        border-left: 5px solid $grisClaro;
+        img{
+            height: 70%;
+        }
+    }   
+
+    &__menu{
+        display: flex;
+        width: 180px;
+        align-items: center;
+        justify-content: center;
+
+        i{
+            color: $blanco;
+            font-size: 32px;
+        }
+
+        #arrow{
+            margin-left: 20px;
+            color: $blanco;
+            font-size: 15px; 
+            font-weight: bold;
+        }
+
+        p{
+            margin-left: 2px;
+            color: $blanco;
+            font-weight: bold;
+            font-size: 20px; 
+            padding:0;
+        }
+    }
+}
